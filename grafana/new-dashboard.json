@@ -2,7 +2,7 @@
   "apiVersion": "dashboard.grafana.app/v1beta1",
   "kind": "Dashboard",
   "metadata": {
-    "name": "adr5tf7"
+    "name": "ad6r2nd"
   },
   "spec": {
     "annotations": {
@@ -29,8 +29,8 @@
     "panels": [
       {
         "datasource": {
-          "type": "datasource",
-          "uid": "grafana"
+          "type": "prometheus",
+          "uid": "eew60hhi6nd34d"
         },
         "fieldConfig": {
           "defaults": {
@@ -110,16 +110,22 @@
         "pluginVersion": "12.1.1",
         "targets": [
           {
-            "channel": "plugin/testdata/random-labeled-stream",
             "datasource": {
-              "type": "datasource",
-              "uid": "grafana"
+              "type": "prometheus",
+              "uid": "eew60hhi6nd34d"
             },
-            "queryType": "randomWalk",
-            "refId": "A"
+            "disableTextWrap": false,
+            "editorMode": "builder",
+            "expr": "node_btrfs_last_commit_seconds",
+            "fullMetaSearch": false,
+            "includeNullMetadata": true,
+            "legendFormat": "__auto",
+            "range": true,
+            "refId": "A",
+            "useBackend": false
           }
         ],
-        "title": "Test panel",
+        "title": "New panel",
         "type": "timeseries"
       }
     ],
